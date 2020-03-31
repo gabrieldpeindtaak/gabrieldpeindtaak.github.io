@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EndProject</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/CSS.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <meta name = 'viewport' content="width=device-width,initial-scale=1">
+
+</head>
+<body>
+
+
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand text-white font-weight-normal" href="#">Home</a>
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse"
+                data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white font-weight-normal" href="#findmore">MyTop3</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white font-weight-normal" href="#" id="navbarDropdown"
+                       role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Player
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#MJ">Michael Jordan</a>
+                        <a class="dropdown-item" href="#LJ">Lebron James</a>
+                        <a class="dropdown-item" href="#KB">Kobe Bryant</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#footer">Footer</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white font-weight-normal" href="ContactPage.html"
+                       TARGET="_blank">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron">
+                <div class="content">
+                    <h2 class="display-5 text-white">My Favorite Basketball Players</h2>
+                    <p class="lead font-weight-bold text-white">Greatest Of All Time <br> (G.O.A.T)</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="#findmore" role="button">Find More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5 text-lg-center" id="findmore">
+        <div class="col-4">
+            <div>
+                <a href="#MJ"><img class="img-fluid" src="Image/Michael-Jordan-300x300-compressor.jpg"/></a>
+            </div>
+            <!--Knop om het collapsible panel te openen en te sluiten  -->
+            <button class="btn mt-3 btn-dark" data-toggle="collapse"
+                    data-target="#Michael">Michael Jordan
+            </button>
+            <div class="collapse" id="Michael" style="border:1px solid black; padding: 1rem;">
+                <h4>Michael Jordan</h4>
+                <img class="img-fluid" src="Image/rsz_nba-160815tro01_1.jpg">
+                <p>
+                    6× NBA champion (1991–1993, 1996–1998) <br>
+                    6× NBA Finals MVP (1991–1993, 1996–1998) <br>
+                    5× NBA Most Valuable Player (1988, 1991, 1992, 1996, 1998)
+                </p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div>
+                <a href="#LJ"><img class="img-fluid" src="Image/LeBron-James1.jpg"/></a>
+            </div>
+            <!--Knop om het collapsible panel te openen en te sluiten  -->
+            <button class="btn mt-3 btn-dark" data-toggle="collapse"
+                    data-target="#Lebron">Lebron James
+            </button>
+            <div class="collapse" id="Lebron" style="border:1px solid black; padding: 1rem;">
+                <h4>Lebron James</h4>
+                <img class="card-img-top img-fluid" src="Image/rsz_nba-160815tro01_1.jpg">
+                <p>
+                    3× NBA champion (2012, 2013, 2016) <br>
+                    3× NBA Finals MVP (2012, 2013, 2016) <br>
+                    4× NBA Most Valuable Player (2009, 2010, 2012, 2013)
+                </p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div>
+                <a href="#KB"><img class="img-fluid" src="Image/Kobe-Bryant.jpg"/></a>
+            </div>
+            <!--Hier is een <a href> gebruikt in plaats van <button>. Let op het ontbreken van data-target -->
+            <button class="btn mt-3 btn-dark" data-toggle="collapse"
+                    data-target="#Kobe">Kobe Bryant
+            </button>
+            <div class="collapse" id="Kobe" style="border:1px solid black; padding: 1rem;">
+                <h4>Kobe Bryant</h4>
+                <img class="card-img-top img-fluid" src="Image/rsz_nba-160815tro01_1.jpg">
+                <p>
+                    5× NBA champion (2000–2002, 2009, 2010) <br>
+                    2× NBA Finals MVP (2009, 2010)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="findmore">
+        <div class="col-12 mb-5">
+            <div id="accordeon">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="mb-0">
+                            <button class="btn btn-link font-weight-bold text-dark border-0" data-toggle="collapse"
+                                    data-target="#MichaelJ">
+                                Michael Jordan
+                            </button>
+                        </h4>
+                    </div>
+                    <div id="MichaelJ" class="collapse" data-parent="#accordeon">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Michael Jordan</h4>
+                            <p class="card-text">Michael Jordan is one of my favorite, just because he was one of the
+                                first
+                                basketball player i have known,<br>
+                                and also he is considered of many as the best player that has ever played the sport.</p>
+                            <a href="#MJ" class="btn btn-primary">Find More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="mb-0">
+                            <button class="btn btn-link font-weight-bold text-dark border-0" data-toggle="collapse"
+                                    data-target="#LebronJ">
+                                Lebron James
+                            </button>
+                        </h4>
+                    </div>
+                    <div id="LebronJ" class="collapse" data-parent="#accordeon">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Lebron James</h4>
+                            <p class="card-text">The reason why i love watching Lebron James play is that, <br>
+                                he make it look easy playing basketball.
+                                Almost no one can guard because he's that good.</p>
+                            <a href="#LJ" class="btn btn-primary">Find More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="mb-0">
+                            <button class="btn btn-link font-weight-bold text-dark border-0" data-toggle="collapse"
+                                    data-target="#KobeB">
+                                Kobe Bryant
+                            </button>
+                        </h4>
+                    </div>
+                    <div id="KobeB" class="collapse" data-parent="#accordeon">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Kobe Bryant</h4>
+                            <p class="card-text">I also put Kobe Bryant in my list just because he has a lot of passion
+                                for the
+                                sport.
+                                <br>
+                                He also guide new players to how to become a great player like he was.</p>
+                            <a href="#KB" class="btn btn-primary">Find More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="MJ">
+        <div class="col-12">
+            <div class="blok3 jumbotron text-lg-left">
+                <div class="content">
+                    <h2 class="display-6 text-white">Michael Jordan</h2>
+                    <p class="lead font-weight-normal text-white">Michael Jeffrey Jordan (geboren op 17 februari
+                        1963),
+                        ook bekend door zijn initialen MJ, is
+                        een
+                        Amerikaanse voormalige
+                        <br> professionele basketbal speler en de belangrijkste eigenaar van de Charlotte Hornets van de
+                        National
+                        Basketball Association (NBA).
+                        <br> Hij speelde 15 seizoenen in de NBA en won zes kampioenschappen met de Chicago Bulls.
+                        <br> Zijn biografie op de officiële NBA-website luidt: "Bij acclamatie is Michael Jordan de
+                        grootste
+                        basketbalspeler aller tijden.
+                        <br> " Hij was een van de meest effectief op de markt gebrachte atleten
+                        <br> van zijn generatie en werd in de jaren tachtig en negentig beschouwd als een hulpmiddel bij
+                        het
+                        populariseren van de NBA over
+                        <br>de hele wereld.</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="#infoMJ" role="button">Find More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5" id="infoMJ">
+        <div class="offset-md-4 col-md-4 offset-md-4 text-lg-center">
+            <h2 class="font-weight-bold">Persoonlijke informatie</h2>
+            <h5 class="font-weight-normal">
+                <i>Naam</i> : Michael Jeffrey Jordan
+                <br>
+                <i>Bijnamen</i> : Air Joran, MJ, ...
+                <br>
+                <i>Positie</i> : Shooting guard
+                <br>
+                <i>Lengte</i> : 1,98 cm
+                <br>
+                <i>Geboortedatum</i> : 17 februari 1963
+                <br>
+                <i>Geboorteplaats</i> : New York, Verenigde Staten
+                <br>
+                <i>Actieve jaren</i> : 1984 – 2003
+                <br>
+                <i>Teams</i> : Chicago Bulls, Washington Wizards
+            </h5>
+            <p class="btn btn-dark btn-lg " data-toggle="modal"
+               data-target="#mijnModal">
+                Gallery
+            </p>
+        </div>
+        <div class="modal fade" id="mijnModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div id="MichaelJordan" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img-fluid" src="Image/Michael Jordan/81oKhJChyeL.jpg"
+                                     alt="First slide">
+                                <div class="carousel-caption d-md-block text-dark">
+                                    Buzzer beater Michael Jordan
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid"
+                                     src="Image/Michael Jordan/main_3-MICHAEL-JORDAN-Autographed-Bulls-Game-Used-Floor-Piece-Storied-Photo-UDA-PristineAuction.com.jpg"
+                                     alt="Second slide">
+                                <h4 class="carousel-caption d-md-block text-primary">
+                                    Shooting Michael Jordan
+                                </h4>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid"
+                                     src="Image/Michael Jordan/michael-jordan-biography_7.jpg"
+                                     alt="Second slide">
+                                <h4 class="carousel-caption d-md-block text-danger">
+                                    Michael Jordan
+                                </h4>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe class="d-block w-100" width="560" height="315"
+                                        src="https://www.youtube.com/embed/LAr6oAKieHk"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#MichaelJordan" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#MichaelJordan" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" id="LJ">
+        <div class="col-12">
+            <div class="blok5 jumbotron text-lg-left">
+                <div class="content">
+                    <h2 class="display-6 text-white">Lebron James</h2>
+                    <p class="lead font-weight-normal text-white">LeBron Raymone James Sr. (geboren op 30 december
+                        1984) is een Amerikaanse professionele
+                        basketbalspeler
+                        <br>voor de Los Angeles Lakers van de National Basketball Association (NBA).
+                        <br>Hij wordt vaak beschouwd als de grootste basketbalspeler aller tijden. Zijn prestaties
+                        omvatten
+                        drie
+                        NBA-kampioenschappen,
+                        <br>vier NBA Most Valuable Player Awards, drie NBA Finals MVP Awards en twee Olympische gouden
+                        medailles.
+                        <br>James verscheen in vijftien NBA All-Star Games en werd driemaal NBA All-Star MVP genoemd.
+                        Hij
+                        won de
+                        NBA
+                        scoretitel van 2008,
+                        <br>is de NBA playoffs scorende leider aller tijden en staat vierde in de gescoorde
+                        carrièrepunten
+                        aller
+                        tijden.
+                        <br>Hij is twaalf keer in het All-NBA First Team gestemd en vijf keer in het All-Defensive First
+                        Team.</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="#infoLB" role="button">Find More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5" id="infoLB">
+        <div class="offset-md-4 col-md-4 offset-md-4 text-lg-center">
+            <h1 class="font-weight-bold">Persoonlijke informatie</h1>
+            <h5 class="font-weight-normal">
+                <i> Naam</i> : LeBron James
+                <br>
+                <i>Bijnaam</i> : The Chosen One, The King, King James
+                <br>
+                <i>Positie</i> : Small-forward
+                <br>
+                <i>Geboortedatum</i> : 30 december 1984
+                <br>
+                <i>Geboorteplaats</i> : Akron (Ohio) Verenigde Staten
+                <br>
+                <i>Actieve jaren</i> : 2003 -
+            </h5>
+            <p class="btn btn-dark btn-lg " data-toggle="modal"
+               data-target="#mijnModal1">
+                Gallery
+            </p>
+        </div>
+        <div class="modal fade" id="mijnModal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div id="LebronJames" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img-fluid" src="Image/Lebron James/160107-LeBron-James.jpg"
+                                     alt="First slide">
+                                <h4 class="carousel-caption  d-md-block text-white">
+                                    Cavalier's Jersey
+                                </h4>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid"
+                                     src="Image/Lebron James/image-asset.jpeg"
+                                     alt="Second slide">
+                                <h4 class="carousel-caption  d-md-block text-white">
+                                    Young Lebron James
+                                </h4>
+                            </div>
+                            <div class="carousel-item ">
+                                <img class="d-block w-100 img-fluid"
+                                     src="Image/Lebron James/lebron-james-biography_2.jpg"
+                                     alt="First slide">
+                            </div>
+                            <div class="carousel-item ">
+                                <iframe class="d-block w-100" width="560" height="315"
+                                        src="https://www.youtube.com/embed/b117a8_jALE"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#LebronJames" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#LebronJames" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="KB">
+        <div class="col-12">
+            <div class="blok7 jumbotron text-lg-left">
+                <div class="content">
+                    <h2 class="display-6 text-white">Kobe Bryant</h2>
+                    <p class="lead font-weight-normal text-white">Kobe Bean Bryant (geboren op 23 augustus 1978) is
+                        een
+                        Amerikaanse voormalige professionele
+                        basketbalspeler.
+                        <br>Hij speelde zijn hele 20-jarige carrière bij de Los Angeles Lakers van de National
+                        Basketball
+                        Association
+                        (NBA).
+                        <br>Hij ging rechtstreeks naar de NBA vanaf de middelbare school en won vijf
+                        NBA-kampioenschappen.
+                        Bryant is 18
+                        keer All-Star,
+                        <br>15 keer lid van het All-NBA Team en 12 keer lid van het All-Defensive team. Hij leidde de
+                        NBA in
+                        het
+                        scoren
+                        gedurende twee seizoenen en
+                        <br>staat op de derde plaats op de ranglijst van het seizoen van de competitie aller tijden en
+                        vierde op
+                        de
+                        scorelijst aller tijden.
+                        <br>Hij wordt algemeen beschouwd als een van de grootste basketbalspelers aller tijden. Bryant
+                        is de
+                        eerste
+                        bewaker in de geschiedenis van
+                        <br>NBA die ten minste 20 seizoenen speelt.</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="#infoKB" role="button">Find More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5" id="infoKB">
+        <div class="offset-md-4 col-md-4 offset-md-4 text-lg-center">
+            <h1 class="text15">Persoonlijke informatie</h1>
+            <h5 class="font-weight-normal">
+                <i>Naam</i> : Kobe Bean Bryant
+                <br>
+                <i>Bijnaam</i> : The Black Mamba
+                <br>
+                <i>Positie</i> : Shooting guard
+                <br>
+                <i>Geboortedatum</i> : 23 augustus 1978
+                <br>
+                <i>Geboorteplaats</i> : Philadelphia(Pennsylvania)
+                <br>
+                <i>Lengte</i> : 198 cm
+                <br>
+                <i>Gewicht</i> : 93 kg
+                <br>
+                <i>Club</i> : Los Angeles Lakers
+            </h5>
+            <p class="btn btn-dark btn-lg " data-toggle="modal"
+               data-target="#mijnModal2">
+                Gallery
+            </p>
+        </div>
+        <div class="modal fade" id="mijnModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div id="KobeBryant" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img-fluid"
+                                     src="Image/Kobe Bryant/5-55471_basketball-kobe-bryant-dunk.jpg"
+                                     alt="First slide">
+                                <div class="carousel-caption  d-md-block text-dark">
+                                    Dunki'n Kobe
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid"
+                                     src="Image/Kobe Bryant/main_1542825098-Kobe-Bryant-Signed-Lakers-Centerpiece-20x30-Limited-Edition-Photo-Panini-COA-PristineAuction.com.jpg"
+                                     alt="Second slide">
+                                <h4 class="carousel-caption  d-md-block text-danger">
+                                    RIP Kobe
+                                </h4>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid"
+                                     src="Image/Kobe Bryant/rip-mamba-a-look-at-kobe-bryant-s-journey-from-an-athlete-to-nba-s-legendary-18-time-all-star-player.jpg"
+                                     alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <iframe class="d-block w-100" width="560" height="315"
+                                        src="https://www.youtube.com/embed/OTTWedyp37o"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#KobeBryant" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#KobeBryant" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row footer text-lg-center text-white bg-dark" id="footer">
+        <div class="col-md-6">
+            <div class="row m-4">
+                <div class="col">
+                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Humbeeksesteenweg 130,<br>1850 Grimbergen</p>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <br>12312512312
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col">
+                    <i class="far fa-envelope fa-2x"></i>
+                    <br><A HREF="mailto:r0744951@student.thomasmore.be">r0744951@student.thomasmore.be</A>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-6">
+            <div class="row m-4">
+                <div class="col">
+                    <h3 class="font-weight-bold">About my site</h3>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col">
+                    <p>
+                        This site is all about basketball(NBA).<br>
+                        I've been playing the sport since i was a child.<br>
+                        I also have my favorite players, and that's the<br>
+                        reason why i made this website.<br>
+                        To share my favorite players.
+                    </p>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col">
+                    <i class="fab fa-facebook fa-3x"></i>
+                    <i class="fab fa-twitter fa-3x"></i>
+                    <i class="fab fa-instagram fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

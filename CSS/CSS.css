@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.jumbotron {
+    background-image: url("../Image/rsz_316711_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 15rem;
+    text-align: center;
+}
+
+.content {
+    margin-top: 10rem;
+}
+
+div.blok3{
+    background-image: url("../Image/Michael-Jordan-www.wallpapersbrowse.com.jpg");
+    background-size: cover;
+    padding-bottom: 1rem;
+}
+
+div.blok5{
+    background-image: url("../Image/lebron_james_nba_miami_heat_background_ball_tattoo_94087_1680x1050.jpg");
+    background-size: cover;
+    padding-bottom: 1rem;
+}
+
+div.blok7{
+    background-image: url("../Image/hd-wallpaper-kobe-bryant-black-background.jpg");
+    background-size: cover;
+    padding-bottom: 1rem;
+}
+
+.btn {
+    border-color: blue;
+    border-style: groove;
+}
