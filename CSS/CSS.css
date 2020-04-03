@@ -42,3 +42,17 @@ div.blok7{
     border-color: blue;
     border-style: groove;
 }
+
+@media (min-width: 768px) {
+    .ankerpuntFind {
+        position: relative;
+        top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ankerpuntFind {
+        position: relative;
+        top: -150px;
+    }
+}
